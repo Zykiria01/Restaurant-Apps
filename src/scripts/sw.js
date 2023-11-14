@@ -23,7 +23,7 @@ self.addEventListener('push', () => {
 });
 
 registerRoute(
-  /^https:\/\/restaurant-api\.dicoding\.dev\/(?:(list|detail))/,
+  /^https:\/\/restaurant-api\.dicoding\.dev\/(?:(list|detail|images))/,
   new CacheFirst({
     cacheName: 'restaurant-detail-cache',
   }),
