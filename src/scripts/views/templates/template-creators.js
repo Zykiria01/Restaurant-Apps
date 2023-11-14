@@ -1,10 +1,11 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable indent */
 /* eslint-disable import/prefer-default-export */
 import CONFIG from '../../globals/config';
 
 export const restaturanCard = (restaurant) => `<div class="restaurant">
   <div class="resto-image-wrapper">
-    <img class="lazyload" src="${CONFIG.BASE_IMAGE_URL}/${
+    <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL}/${
   restaurant.pictureId
 }" alt="${restaurant.name}" crossorigin="anonymous"/>
 
@@ -15,7 +16,7 @@ ${restaurant.city}</p>
 <div class="title">
   <h2 class="resto-name"><a href="${`/#/detail/${restaurant.id}`}"> ${
   restaurant.name
-}<a/></h2>
+}</a></h2>
 <p>
 <i class="fa fa-solid fa-star"></i>
 ${restaurant.rating}
@@ -29,7 +30,7 @@ ${restaurant.rating}
 export const restaurantDetail = (restaurant) => `
       <div class="restaurant-content">
       <div class="detail-header">
-      <img class="lazyload" src="${CONFIG.BASE_IMAGE_URL}/${
+      <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL}/${
   restaurant.pictureId
 }" class="detail-img" alt="${restaurant.name}" crossorigin="anonymous"/>
   <div>
@@ -95,13 +96,13 @@ ${restaurant.description}</p>
     </div>`;
 
 export const createLikeButtonTemplate = () => `
-  <button aria-label="like this movie" id="likeButton" class="like">
+  <button aria-label="like this restaurant" id="likeButton" class="like">
      <i class="fa fa-heart-o" aria-hidden="true"></i>
   </button>
 `;
 
 export const createLikedButtonTemplate = () => `
-  <button aria-label="unlike this movie" id="likeButton" class="like">
+  <button aria-label="unlike this restaurant" id="likeButton" class="like">
     <i class="fa fa-heart" aria-hidden="true"></i>
   </button>
 `;

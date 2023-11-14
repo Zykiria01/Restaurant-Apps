@@ -5,6 +5,17 @@ const Home = {
   async render() {
     return `
        <div class="hero">
+       <picture>
+        <source
+          media="(max-width: 600px)"
+          srcset="/images/sharp/hero-image_4-small.jpg"
+        />
+        <source
+          media="(max-width: 1280px)"
+          srcset="/images/sharp/hero-image_4-large.jpg"
+        />
+        <img src="/images/hero-image_4.jpg" alt="Makanan" />
+        </picture>
       </div>
       <div class="restaurant-container">
         <div class="restaurant-content">

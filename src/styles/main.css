@@ -99,7 +99,7 @@ h2 a{
   height: 400px;
   overflow: hidden;
   position: relative;
-  background-image: url('../public/images/sharp/hero-image_4-large.jpg');
+  /* background-image: url('../public/images/sharp/hero-image_4-large.jpg'); */
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -328,6 +328,8 @@ h2 a{
   text-decoration: none;
   color: black;
   font-size: 20px;
+  min-height: 44px;
+  min-width: 44px;
 }
 
 .resto-name a:hover {

@@ -27,6 +27,18 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'public/',
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
@@ -39,9 +51,6 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/public/'),
           to: path.resolve(__dirname, 'dist/'),
-          globOptions: {
-            ignore: ['**/images/**'],
-          },
         },
       ],
     }),
