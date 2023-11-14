@@ -1,0 +1,202 @@
+@media screen and (max-width : 550px){
+  *{
+    font-size: 20px;
+  }
+
+  .container{
+    position: relative;
+  }
+
+  .skip-link{
+    top: -100px;
+  }
+
+  button{
+    font-size: 44px;
+    display: inline-block;
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  h2 a{
+    display: inline-block;
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .nav-item{
+    display: list-item;
+  }
+  
+  .navbarmob ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  button{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+  }
+
+  .hamburger{
+    display: block;
+    margin-right: 8px;
+  }
+
+  .active{
+    display: block;
+    transform: translate(0, 0) !important;
+  }
+
+  .detail-header{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbarmob{
+    z-index: 10;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .nav-links-mob{
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links-mob a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    left: auto;
+  }
+
+  .nav-links-mob a:hover{
+    color: black;
+  }
+
+  #restaurant-list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }  
+
+  .resto-menu-wrapper li{
+    font-size: 12px;
+  }
+
+  .detail-menu-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .divider{
+    width: 87%;
+    border: 1px solid grey;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  *{
+    font-size: 16px;
+  }
+
+  button{
+    font-size: 24px;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  h1 a{
+    margin-top: 12px;
+  }
+
+  .nametag a{
+    font-size: 24px;
+  }
+
+  .navbar ul {
+    text-align: right;
+  }
+
+  .navbar li {
+    display: inline;
+    padding: 16px;
+  }
+
+  .hero {
+    height: 400px;
+  }
+
+  .slogan {
+    font-size: 40px; 
+  }
+
+  #restaurant-list {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .detail-header{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 1rem; 
+  }
+
+  .divider{
+    width: 94%;
+    border: 1px solid grey;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hamburger{
+    display: none;
+  }
+
+  .navbar{
+    display: inline;
+    padding: 20px;
+  }
+
+  .detail-header{
+    display: flex;
+    flex-direction: row;
+  }
+
+  h1 a{
+    font-size: 24px;
+  }
+
+  #restaurant-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .divider{
+    width: 75%;
+    border: 1px solid grey;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .divider{
+    width: 50%;
+    border: 1px solid grey;
+  }
+}
